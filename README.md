@@ -1,48 +1,110 @@
-# MovieBooking
+# 🎬 MovieBooking System
 
-A Java Swing-based movie ticket booking application.
+A **Java Swing-based Movie Ticket Booking Application** that provides a complete GUI solution for users to browse movies, select seats, and book tickets — along with admin controls for managing the system.
 
-## Project Structure
+---
 
-- `src/Cinema/`
-  - `AdminLoginPage.java` - Admin login interface and access control.
-  - `DashBoard.java` - Main dashboard for managing movie sessions and bookings.
-  - `DBconnection.java` - Database connection utility.
-  - `LoginPage.java` - User login screen.
-  - `LoginProfile.java` - User profile and session management.
-  - `MovieInfo.java` - Movie details and information display.
-  - `MovieShowtimesUI.java` - Showtimes selection interface.
-  - `PaymentPageUI.java` - Payment processing screen.
-  - `RegistationPage.java` - Registration form for new users.
-  - `SeatLayoutManager.java` - Seat selection and layout logic.
-  - `TicketGeneratorUI.java` - Ticket generation and printing screen.
+## ✨ Features
 
-- `bin/` - Compiled application classes.
-- `Image/` - Project images and assets used by the UI.
+### 👤 User Side
+- 🔐 User registration & login
+- 🎥 Browse movie details
+- 🕒 View showtimes
+- 💺 Interactive seat selection
+- 💳 Ticket booking & payment
+- 🎟️ Ticket generation
 
-## Description
+### 🛠️ Admin Side
+- 🔑 Admin login
+- 📊 Dashboard for managing shows
+- 🎬 Add/update movie sessions
+- 📈 Monitor bookings
 
-This application provides a graphical interface for users to log in, view movie details, choose showtimes, select seats, and complete ticket purchases. Admin users can manage movie sessions and monitor bookings.
+---
 
-## Requirements
+## 📁 Project Structure
 
-- Java Development Kit (JDK) 8 or later
+```
+src/Cinema/
+│
+├── AdminLoginPage.java      # Admin authentication
+├── DashBoard.java           # Admin control panel
+├── DBconnection.java        # Database connectivity
+├── LoginPage.java           # User login screen (entry point)
+├── LoginProfile.java        # User session/profile
+├── MovieInfo.java           # Movie details display
+├── MovieShowtimesUI.java    # Showtimes selection
+├── PaymentPageUI.java       # Payment interface
+├── RegistationPage.java     # User registration
+├── SeatLayoutManager.java   # Seat selection logic
+└── TicketGeneratorUI.java   # Ticket generation
 
-## Running the Project
+bin/                         # Compiled classes
+Image/                       # UI assets (images)
+```
 
-1. Compile the Java source files in `src/Cinema/`.
-2. Run the main application class from the compiled output.
+---
 
-Example command line (from the project root):
+## 🖥️ Tech Stack
 
-```sh
+- **Java (JDK 8+)**
+- **Java Swing (GUI)**
+- **JDBC (Database Connectivity)**
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Compile the Project
+
+```bash
 javac -d bin src/Cinema/*.java
+```
+
+### 2️⃣ Run the Application
+
+```bash
 java -cp bin Cinema.LoginPage
 ```
 
-> If the project uses a database, make sure the database connection settings in `src/Cinema/DBconnection.java` are configured correctly before running.
+---
 
-## Notes
+## ⚙️ Configuration
 
-- The exact entry point may vary depending on the implementation. `LoginPage` is a likely starting class for the GUI.
-- Place any required images from `Image/` into the working directory so the UI can load them.
+Before running:
+
+- ✔️ Ensure **JDK 8 or later** is installed  
+- ✔️ Configure database settings in:
+  src/Cinema/DBconnection.java
+- ✔️ Place all images from the `Image/` folder in the working directory
+
+---
+
+## 📌 Notes
+
+- The main entry point is typically:
+  Cinema.LoginPage
+- Make sure your database is running and accessible before launching the app.
+- UI may depend on external assets (images), so missing files can affect display.
+
+---
+
+## 💡 Future Improvements
+
+- Online payment gateway integration  
+- Responsive UI redesign  
+- Movie search & filtering  
+- Booking history for users  
+- Email/SMS ticket confirmation  
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repository and submit pull requests to improve functionality or UI.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
